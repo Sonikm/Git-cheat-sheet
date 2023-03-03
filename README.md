@@ -188,7 +188,7 @@ $ git remote
 Adds a remote repository to your local repository
 
 ```
-$ git add remote origin https://repo_here
+$ git remote add origin https://repo_here
 ```
 
 Submit to commit the local repository to the remote repository
