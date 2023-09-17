@@ -267,7 +267,72 @@ $ git push origin master
 
 Fetch and merge any commits from the tracking remote branch
 ```
-$ git pull origin master
+$ git pull origin BRANCH_NAME
+```
+
+## Checking out pull requests locally
+
+Fetch the reference to the pull request based on its ID number
+```
+$ git fetch origin pull/ID/head:BRANCH_NAME
+```
+
+Switch to the new branch that's based on this pull request:
+```
+$ git checkout BRANCH_NAME
+```
+## cherry-pick
+
+Copy the commit of another branch to the current branch
+
+```
+$ git cherry-pick [commit id]
+```
+
+## Checking out pull requests locally
+
+Fetch the reference to the pull request based on its ID number
+
+```
+$ git fetch origin pull/ID/head:BRANCH_NAME
+```
+
+Switch to the new branch that's based on this pull request:
+
+```
+$ git checkout BRANCH_NAME
+```
+
+## browse, open
+
+Open a page of the project of GitHub
+
+```
+$ git browse
+```
+
+```
+$ open https://github.com/USER_NAME/REPOSITORY_NAME
+```
+
+Open a page of the issues of the project of GitHub
+
+```
+$ git browse -- issues
+```
+
+```
+$ open https://github.com/USER_NAME/REPOSITORY_NAME/issues
+```
+
+Opening the wiki pages of the project of GitHub
+
+```
+$ git browse -- wiki
+```
+
+```
+$ open https://github.com/USER_NAME/REPOSITORY_NAME/wiki
 ```
 
 
